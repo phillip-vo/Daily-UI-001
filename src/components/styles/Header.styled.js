@@ -11,8 +11,10 @@ export const StyledHeader = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 300px;
-  margin-top: 30px;
+  width: ${({ width }) => width || "300px"};
+  margin: ${({ margin }) => margin || "30px 0 0 0"};
+  position: ${({ position }) => position || "relative"};
+  left: ${({ left }) => left};
 `;
 
 export const Image = styled.img`
